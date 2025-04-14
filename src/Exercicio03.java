@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Exercicio03 {
-    public void executarExercicio03(Scanner scanner) {
+    public void executar(Scanner scanner) {
 
         //Faça um programa que receba dez idades, pesos e alturas, calcule e mostre:
         //• a média das idades das dez pessoas;

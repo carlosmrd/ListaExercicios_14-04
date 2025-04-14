@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Exercicio07 {
-    public void executarExercicio07(Scanner scanner) {
+    public void executar(Scanner scanner) {
 
         //Criar um algoritmo para auxiliar na lojinha do Sr. Abu.
         //(a) O sistema deve permitir o cadastro de produtos. Cada item possui código único, nome,

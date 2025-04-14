@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Exercicio01 {
-    public void executarExercicio01(Scanner scanner) {
+    public void executar(Scanner scanner) {
 
         //Foi feita uma pesquisa sobre a audiência de canal de TV em várias casas de uma cidade, em
         //determinado dia. Para cada casa consultada foi fornecido o número do canal (4, 5, 7, 12) e o
@@ -11,7 +11,7 @@ public class Exercicio01 {
         //• calcule e mostre a porcentagem de audiência de cada canal.
         //Para encerrar a entrada de dados, digite o número do canal ZERO.
 
-
+        System.out.println("Teste");
 
     }
 }
