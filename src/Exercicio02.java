@@ -83,6 +83,5 @@ public class Exercicio02 {
             }
             System.out.println();
         } while (option != 3);
-
     }
 }

@@ -13,18 +13,55 @@ public class Exercicio01 {
 
         System.out.println("Teste");
 
-        int channel = 0;
+        int channel;
         int viewers;
+        int channel4Viewers = 0;
+        int channel5Viewers = 0;
+        int channel7Viewers = 0;
+        int channel12Viewers = 0;
 
         do {
-            System.out.print("Insira o número do canal, ou 0 para encerrar: ");
+            System.out.print("Insira o número do canal (4, 5, 7, 12), ou 0 para encerrar: ");
             channel = scanner.nextInt();
 
-            System.out.print("Insira a quantidade de pessoas da casa: ");
-            viewers = scanner.nextInt();
+            if (channel != 0) {
+                System.out.print("Insira a quantidade de pessoas da casa: ");
+                viewers = scanner.nextInt();
 
-
+                switch (channel) {
+                    case 4: {
+                        channel4Viewers += viewers;
+                    }
+                    break;
+                    case 5: {
+                        channel5Viewers += viewers;
+                    }
+                    break;
+                    case 7: {
+                        channel7Viewers += viewers;
+                    }
+                    break;
+                    case 12: {
+                        channel12Viewers += viewers;
+                    }
+                    break;
+                    default: {
+                        System.out.println("Canal inexistente, tente novamente.");
+                    }
+                    break;
+                }
+            }
         } while (channel != 0);
 
+        int totalViewers = channel4Viewers + channel5Viewers + channel7Viewers + channel12Viewers;
+
+        if (totalViewers != 0) {
+            System.out.printf("O canal 4 tinha %d espectador(es), totalizando %.1f%%.\n", channel4Viewers, (double) (channel4Viewers * 100 / totalViewers));
+            System.out.printf("O canal 5 tinha %d espectador(es), totalizando %.1f%%.\n", channel4Viewers, (double) (channel5Viewers * 100 / totalViewers));
+            System.out.printf("O canal 7 tinha %d espectador(es), totalizando %.1f%%.\n", channel4Viewers, (double) (channel7Viewers * 100 / totalViewers));
+            System.out.printf("O canal 12 tinha %d espectador(es), totalizando %.1f%%.\n", channel4Viewers, (double) (channel12Viewers * 100 / totalViewers));
+        } else {
+            System.out.println("Nenhum espectador foi registrado.");
+        }
     }
 }
